@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 
+:root {
+  --text-color : rgb(59, 58, 58); 
+  --sm-text-color : rgb(95, 94, 94); 
+  --box-background : #fff;
+  --box-shadow : #808080; 
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,3 +24,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

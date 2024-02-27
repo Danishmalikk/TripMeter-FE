@@ -6,12 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: { 
-        transparent : 'transparent', 
-        current : 'currentColor',
-        background : '#fafafa',
-        cardBg : '', 
-        cardShadow : ''
-      }
+        'text-color' : "var(--text-color)",  
+        'sm-text-color' : "var(--sm-text-color)",  
+        'box-background' : "var(--box-background)", 
+        'box-shadow' : "var(--box-shadow)",
+
+      },
+      
     },
   },
   plugins: [],
