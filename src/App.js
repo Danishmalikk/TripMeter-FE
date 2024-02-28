@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App flex">
         <Sidebar />
-      <div className='w-[1300px]'>
+      <div className='w-[1300px] ml-[16.3rem]'>
         <Navbar />
         <Routes>
           <Route path='/' element={<Dashboard />} />
