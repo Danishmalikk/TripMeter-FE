@@ -74,11 +74,11 @@ function CustomizedTables() {
 const Trip = () => {
   return (
     <div className='flex flex-col gap-6 mt-20 mx-10 rounded-md bg-box-background shadow-lg shadow-box-shadow p-6'> 
-        <div className='bg-green-800 rounded-md shadow-lg shadow-slate-800 text-2xl -mt-10 w-fit px-5 h-16 flex items-center justify-center text-white'> Trips </div>
+        <div className='bg-box-background rounded-md shadow-lg shadow-slate-800 text-2xl -mt-10 w-fit px-5 h-16 flex items-center justify-center text-button-text'> Trips </div>
         <div className='flex justify-between bg-slate-200 p-4 px-6 items-center '> 
             <p> Total Records: 0 </p>
-            <Link className='bg-green-800 w-28 rounded-md shadow-lg shadow-slate-800 p-2 px-4 text-white' to={'/trip'}>+ Create </Link>
-            <input className='bg-green-800 rounded-md shadow-slate-800 shadow-lg p-2' placeholder='Search columns'/> 
+            <Link className='bg-box-background w-28 rounded-md shadow-lg shadow-slate-800 p-2 px-4 text-button-text' to={'/trip'}>+ Create </Link>
+            <input className='bg-box-background rounded-md shadow-slate-800 shadow-lg p-2' placeholder='Search columns'/> 
             <button><FaSearch/></button>
         </div>
         <CustomizedTables/>

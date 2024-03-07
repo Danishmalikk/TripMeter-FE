@@ -9,25 +9,27 @@ import CreateTrip from './Components/DailyJobs/Trip/CreateTrip';
 import Passenger from './Components/DailyJobs/Passenger/Passenger';
 import CreatePassenger from './Components/DailyJobs/Passenger/CreatePassenger';
 import Login from './Components/Login/Login';
-import Register from './Components/Register/Register';
+import Protect from './utils/Protect';
+import { useContext} from 'react';
+import AuthContext from './utils/AuthContext';
 
 
 function App() {
+  const {isLoggedIn }= useContext(AuthContext)
   return (
     <div className="App flex">
-        <Sidebar />
-      <div className='w-[1300px] ml-[15rem]'>
-        <Navbar />
+      {isLoggedIn && <Sidebar/> } 
+      <div className='w-[1300px] ml-60'>
+      {isLoggedIn && <Navbar /> } 
         <Routes>
-          <Route path='/' element={<Dashboard />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/trips' element={<Trip/>} />
-          <Route path='/trip' element={<CreateTrip/>} />
-          <Route path='/passengers' element={<Passenger/>} />
-          <Route path='/passenger' element={<CreatePassenger/>} />
+          <Route path='/' element={<Login/>}> </Route>
+          <Route path='/dashboard' element={<Protect Component={Dashboard}/>}></Route>
+          <Route path='/trips' element={<Protect Component={Trip}/>}></Route>
+          <Route path='/trip' element={<Protect Component={CreateTrip}/>}></Route>
+          <Route path='/passengers' element={<Protect Component={Passenger}/>}></Route>
+          <Route path='/passenger' element={<Protect Component={CreatePassenger}/>}></Route>
         </Routes>
-        <Footer />
+        {isLoggedIn && <Footer /> } 
       </div>
     </div>
   );

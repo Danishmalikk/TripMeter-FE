@@ -6,7 +6,9 @@
 :root {
   --text-color : rgb(59, 58, 58); 
   --sm-text-color : rgb(95, 94, 94); 
-  --box-background : #fff;
+  --button-text-color : white; 
+  --box-background : rgb(20, 78, 4) ;
+  --input-border : #055C21; 
   --box-shadow : #808080; 
 }
 

@@ -82,19 +82,19 @@ const Dashboard = () => {
 
       <div className="mx-10 mt-8 flex gap-6 ">
         <div className="bg-white rounded-md w-1/4 p-7 text-gray-500"> 
-          <div className="flex justify-between"> <MdOutlineBarChart className="bg-yellow-500 text-white w-24 h-24 rounded-md -mt-10"/> <span> <p> Total Trips </p> <p className="text-right text-black"> 184 </p> </span></div>
+          <div className="flex justify-between"> <MdOutlineBarChart className="bg-yellow-500 text-button-text w-24 h-24 rounded-md -mt-10"/> <span> <p> Total Trips </p> <p className="text-right text-black"> 184 </p> </span></div>
           <div className="flex gap-2 items-center border-t border-t-gray-400 mt-4"> <FaTag/> More details </div>
         </div>
         <div className="bg-white rounded-md w-1/4 p-7 text-gray-500"> 
-          <div className="flex justify-between"> <MdOutlineBarChart className="bg-pink-500 text-white w-24 h-24 rounded-md -mt-10"/> <span> <p> Total Revenue </p> <p className="text-right text-black"> 2,97,897 </p> </span></div>
+          <div className="flex justify-between"> <MdOutlineBarChart className="bg-pink-500 text-button-text w-24 h-24 rounded-md -mt-10"/> <span> <p> Total Revenue </p> <p className="text-right text-black"> 2,97,897 </p> </span></div>
           <div className="flex gap-2 items-center border-t border-t-gray-400 mt-4"> <FaTag/> More details </div>
         </div>
         <div className="bg-white rounded-md w-1/4 p-7 text-gray-500"> 
-          <div className="flex justify-between"> <MdOutlineBarChart className="bg-green-600 text-white w-24 h-24 rounded-md -mt-10"/> <span> <p> Trips in Progress </p> <p className="text-right text-black"> 54 </p> </span></div>
+          <div className="flex justify-between"> <MdOutlineBarChart className="bg-green-600 text-button-text w-24 h-24 rounded-md -mt-10"/> <span> <p> Trips in Progress </p> <p className="text-right text-black"> 54 </p> </span></div>
           <div className="flex gap-2 items-center border-t border-t-gray-400 mt-4"> <FaTag/> More details </div>
         </div>
         <div className="bg-white rounded-md w-1/4 p-7 text-gray-500"> 
-          <div className="flex justify-between"> <MdOutlineBarChart className="bg-blue-600 text-white w-24 h-24 rounded-md -mt-10"/> <span> <p> Booked Trips </p> <p className="text-right text-black"> 23 </p> </span></div>
+          <div className="flex justify-between"> <MdOutlineBarChart className="bg-blue-600 text-button-text w-24 h-24 rounded-md -mt-10"/> <span> <p> Booked Trips </p> <p className="text-right text-black"> 23 </p> </span></div>
           <div className="flex gap-2 items-center border-t border-t-gray-400 mt-4"> <FaTag/> More details </div>
         </div>
       </div>

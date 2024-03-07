@@ -6,11 +6,9 @@ import { useNavigate } from "react-router-dom";
 const Register = () => {
   const [user, setUser] = useState({
     name: "",
-    address: "",
     email: "",
     password: "",
     mobileNo: "",
-    qualification: "",
   });
   const navigate = useNavigate();
 
@@ -19,8 +17,8 @@ const Register = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:8001/register", user);
-    navigate("/login");
+    await axios.post("http://localhost:8010/CreateUser", user);
+    navigate("/");
   };
 
   return (
@@ -82,14 +80,12 @@ const Register = () => {
           <p>
             {" "}
             Already have account!{" "}
-            <Link className="text-blue-600" to={"/login"}>
+            <Link className="text-blue-600" to={"/"}>
               {" "}
               Login{" "}
             </Link>
           </p>
-           
         </form>
-        
       </div>
     </div>
     </div>
