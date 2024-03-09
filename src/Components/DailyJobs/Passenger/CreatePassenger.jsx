@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const CreatePassenger = () => {
   return (
-    <div className="mx-10 mt-20">
+    <div className="mx-10 mt-20 ml-72 ">
     <Link to={'/passengers'} 
     className='bg-box-background rounded-md shadow-lg shadow-slate-800 text-2xl -mt-10 w-fit px-5 h-16 
     flex items-center justify-center text-button-text'> 

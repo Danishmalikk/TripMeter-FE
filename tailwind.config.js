@@ -12,6 +12,7 @@ module.exports = {
         'box-background' : "var(--box-background)", 
         'input-border' : "var(--input-border)", 
         'box-shadow' : "var(--box-shadow)",
+        'backgorund-color' : "var(--background)", 
 
       },
       

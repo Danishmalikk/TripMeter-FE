@@ -7,9 +7,10 @@
   --text-color : rgb(59, 58, 58); 
   --sm-text-color : rgb(95, 94, 94); 
   --button-text-color : white; 
-  --box-background : rgb(20, 78, 4) ;
+  --box-background : #D71313;
   --input-border : #055C21; 
   --box-shadow : #808080; 
+  --background : #FF8989; 
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ebebeb;
+  background-color: #f4f4f4;
 }
 
 code {

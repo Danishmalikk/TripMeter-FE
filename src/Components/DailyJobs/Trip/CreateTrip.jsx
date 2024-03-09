@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, FormControl, FormLabel, InputLabel, MenuItem, Select } from "@mui/material";
 import { IoToggleOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { MdCancel } from "react-icons/md";
 import { FaSave } from "react-icons/fa";
 import Switch from '@mui/material/Switch';
@@ -9,7 +9,8 @@ import DateAuto, {Time} from "../../../utils/time";
 import axios from 'axios' ; 
 
 const CreateTrip = () => {
-  const [Booking, setBooking] = useState('');
+  const navigate = useNavigate()
+  const [Booking, setBooking] = useState([]);
   const [MobileNumber, setMobileNumber] = useState(null)
 
   const handleChange = (event) => {
@@ -21,13 +22,22 @@ const CreateTrip = () => {
     setMobileNumber(e.target.value)
   }
 
-  const checkUser = () => { 
-    try {
-      const response = axios.get('api',MobileNumber)
-      
-    } catch (error) {
-      console.log(error)
-    }
+  const checkPrevBooking = () => { 
+    navigate('/trip/pickuplocation')
+    // try {
+    //   const token = localStorage.getItem('token')
+    //   axios.get('http://localhost:8010/trip/GetPrevBooking', { 
+    //     headers: { 
+    //       "Content-Type" : 'application/json', 
+    //       'Authorization' : `Bearer ${token}`
+    //     }
+    //   })
+    //   .then(response=>{ 
+    //     console.log(response)
+    //   })
+    // } catch (error) {
+    //   console.log(error)
+    // }
   } 
 
   return (
@@ -195,13 +205,25 @@ const CreateTrip = () => {
     //     </form>
     //   </div>
     // </div>
+    <div className="ml-72 flex flex-col gap-20">
     <div className="mx-10 mt-20 flex flex-col w-40">
     <label className="mt-2">Mobile Number</label>
     <input 
     onChange={(e)=>handleMobileNumber(e)}
-    className="border-b-2 border-input-border outline-none bg-inherit" 
+    className="border-b-2 mt-4 border-input-border outline-none bg-inherit" 
     type="number" 
     placeholder="Enter Mobile No." />  
+    <button
+    onClick={checkPrevBooking}
+    className="text-white p-2 px-3 bg-box-background rounded-md shadow-lg shadow-slate-800 mt-6 w-20 h-10"> 
+    Submit 
+    </button>
+    </div>
+    {/* Table for showing prev booking details */}
+    <div className="mx-10">
+        Table For showing prev booking detials
+    </div> 
+    
     </div>
   );
 };

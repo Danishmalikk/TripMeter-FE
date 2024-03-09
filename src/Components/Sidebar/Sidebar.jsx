@@ -46,7 +46,7 @@ const Sidebar = () => {
         <div onClick={(e)=> setIsActiveMaster(!isActiveMaster)} className='cursor-pointer flex items-center gap-12'><div className='flex gap-2'><PiSquaresFourFill size={'1.5rem'}/> Master Data </div> <div> <IoMdArrowDropdown/> </div>   </div>
         {isActiveMaster && ( 
           <div className='flex flex-col gap-4 ml-3'>
-              <Link className='cursor-pointer flex items-center gap-2'><CgProfile size={'1rem'}/> Booking Counter </Link>
+              <Link to={'/bookingcounter'} className='cursor-pointer flex items-center gap-2'><CgProfile size={'1rem'}/> Booking Counter </Link>
               <Link className='cursor-pointer flex items-center gap-2'><CgProfile size={'1rem'}/> Driver </Link>
               <Link className='cursor-pointer flex items-center gap-2'><FaGasPump size={'1rem'}/> Gas Type </Link>
               <Link className='cursor-pointer flex items-center gap-2'><MdOutlinePayment size={'1rem'}/> Payment Mode </Link>

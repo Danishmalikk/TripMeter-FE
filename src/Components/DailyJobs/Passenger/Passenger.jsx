@@ -75,7 +75,7 @@ function CustomizedTables() {
 
 const Passenger = () => {
   return (
-    <div className='flex flex-col gap-6 mt-20 mx-10 rounded-md bg-box-background shadow-lg shadow-box-shadow p-6'> 
+    <div className='ml-72 flex flex-col gap-6 mt-20 mx-10 rounded-md bg-box-background shadow-lg shadow-box-shadow p-6'> 
         <div className='bg-box-background rounded-md shadow-lg shadow-slate-800 text-2xl -mt-10 w-fit px-5 h-16 flex items-center justify-center text-button-text'> Passengers </div>
         <div className='flex justify-between bg-slate-200 p-4 px-6 items-center '> 
             <p> Total Records: 0 </p>

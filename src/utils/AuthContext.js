@@ -14,9 +14,9 @@ export const AuthProvider = ({ children }) => {
     }
   }, []);
  
-  const login = () => {
+  const login = (token) => {
     // Set token in local storage upon login
-    localStorage.setItem('token', "Tripmeter");
+    localStorage.setItem('token', token);
     setIsLoggedIn(true);
   };
 

@@ -8,7 +8,7 @@ import { FaTag } from "react-icons/fa6";
 
 const Dashboard = () => {
   return (
-    <div className="dashboard flex flex-col gap-8">
+    <div className="ml-64 dashboard md:flex md:flex-col gap-8">
       <div className="dashboard-card flex flex-row gap-5 mt-28 mx-10 w-100% h-[280px]">
         <div className="flex flex-col relative p-6  w-96 bg-white shadow-xl rounded-md">
           <div className="absolute -top-4 hover:-top-16 rounded-md">
